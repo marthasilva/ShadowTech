@@ -1,0 +1,222 @@
+*{
+    font-family: 'Courier New', Courier, monospace ; /* tipo de fonte dos elementos em geral */
+    font-weight: bold;
+    color: black;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.divContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divHeader{
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.divSection{
+    border: 1px solid #ffc700;
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto;
+    background-color: #403d34;
+}
+
+.divSectionEquipe{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #ffc700;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.tituloEquipe{
+    padding: 16px; 
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.divContato{
+    background-color: rgb(0, 0, 0);
+    height: 77vh;
+    border: 1px solid #ffc700;
+}
+
+.divFooter{
+    height: auto;
+}
+
+.divPreFooter{
+    height: 2vh;
+    text-align: center;
+    background-color: black; 
+}
+
+.divRights{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+hr {
+    box-sizing: content-box;
+    width: 20%;
+    overflow: visible;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.divImgHeader{
+    padding: 0;
+    margin: 0;
+    height: 85%; 
+    width: 100%; 
+    background-color: rgb(0, 0, 0);
+}
+.divTextoHeader{
+    padding: 0;
+    margin: 0; 
+    text-align: center;
+    height: 45%; 
+    width: 100%; 
+    background-color: #403d34;
+}
+
+.hTitulo{
+    padding-top: 48px;
+    padding-bottom: 0;
+    color: #ffc700;
+    font-size: 270%;
+    width: 100%;
+}
+.pTexto{
+    color: #ffc700;
+    text-align: justify;
+    font-size: 150%;
+    margin: 48px;
+    margin-bottom: 0;
+    padding-bottom: 48px;
+}
+
+
+.divTextoL{
+    /* float: left;  */
+    text-align: center;
+    height: 100%; 
+    width: 40%; 
+    background-color: #ffc700;
+}
+
+.divTextoR{
+    text-align: center;
+    height: auto; 
+    width: auto; 
+    background-color: #403d34;
+    margin-top: -30px;
+}
+
+.divImgL{
+    float: left; 
+    text-align: center;
+    height: auto; 
+    width: auto; 
+    background-color: black;
+}
+
+.imgSection{
+    height: auto;
+    width: auto;
+}
+
+.imgHeader{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* carrosel: */
+
+.margemAutomatica{
+    margin-left:auto;
+    margin-right:auto
+}
+.margemTB{
+    margin-top:16px!important;
+    margin-bottom:16px!important
+}
+.divSlides{
+    height: 100%;
+    width: 100%;
+    background-color: #403d34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divApresentacao{
+    max-width:440px; 
+    background-color: #ffc700;
+    border: 1px solid red;
+}
+
+.slideContato{
+    display:none;
+    width:100%; 
+    height:430px
+}
+
+@media (max-width: 900px){
+    #logoFaixaV{
+        display: block !important;
+    }
+}
+
+@media(max-width: 800px){
+    #bemVindoH{
+        display: none;
+    }
+    #bemVindoV{
+        display: block !important;
+        height: 500px;
+        width: 100%;
+    }
+    .divImgL{
+        width: 100%;
+        display: block;
+    }
+    .divTextoR{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .divSection{
+        height: auto;
+    }
+}
+
+@media (max-width: 650px){
+    #bemVindoV{
+        height: 100%;
+    }    
+}

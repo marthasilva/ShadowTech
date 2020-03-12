@@ -1,0 +1,381 @@
+.fontYellow{
+    color: #ffc700;
+}
+
+.divEspacoNav{
+    height: 290px;
+    width: 100%;
+    background-color: black;
+}
+
+.btnTopo{
+    padding: 0 12px;
+    margin: 0;
+    background-color: black;
+    border-radius: 100vh;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 3vh;
+    left: 2vw;
+    font-size: 200%;
+    outline: none;
+    z-index: 9999;
+}
+
+.btnTopo:hover{
+    color: #403d34;
+    background-color: #ffc700;
+    transition: 0.7s;
+}
+
+.textoTopo{
+    display: none;
+    background-color: lightgrey;
+    padding: 0 16px;
+    position: fixed;
+    bottom: 5vh;
+    left: 6.7vw;
+}
+
+.btnTopo:hover .textoTopo{
+    display: block;
+}
+
+.divContainerLogo{
+    text-align: center;
+    background-color: black;
+    height: 240px;
+    z-index: 100 !important;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ffc700;
+}
+
+.imgLogo{
+    width:90%;
+    height: auto; 
+    z-index: 100;
+    padding: 0 !important; 
+    padding-top: 0 !important; 
+    margin-top: 1vh;
+}
+
+/****************************** NAVBAR HORIZONTAL ******************************/
+.divNavH{
+    margin: 0;
+    padding: 0;
+    height: 58px;
+    width:100%; 
+	box-shadow: 0px 1px 10px 5px #ffc700; 
+	position: fixed;
+	top:240px;
+	left:0;
+	z-index: 1;
+    font-weight: bold;
+    background-color: black;
+}
+
+.navHorizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navHorizontal li{
+    margin: 0;
+    padding: 9.7px 0;
+    height: 100%;
+    display: inline-block;
+    background-color: black;
+    border-bottom: 1px solid #ffc700;
+}
+
+.navHorizontal li a{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 10px;
+    /* height: 100%; */
+    min-height: 50px;
+    font-size: 200%;
+    text-decoration: none;
+    background-color: black;
+    border-left: 1px solid #ffc700;
+    border-right: 1px solid #ffc700;
+}
+
+.noBorderL{
+    border-left: none !important;
+}
+
+.noBorderR{
+    border-right: none !important;
+}
+
+.navHorizontal li a:hover{
+    color: #403d34;
+    background-color: #ffc700;
+    transition: 0.7s;
+}
+
+.ulDropdownH{
+    list-style:none; /* removendo o tipo de lista da ul ul da navBar (elemento 'Acesso' que tem dois li - Cadastro e Login) */
+    position:absolute; /* setando a posição da lista(os elementos cadastro e login) da ul ul (acesso) como 'absoluta' */
+    color:greenyellow; /* cor da fonte dos elementos em geral */
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    z-index: -1000;
+    margin-top: -500px !important;
+}
+
+/* quando passar com o mouse por cima do elemento li (acesso) da ul (navBar), setar a estilização da ul ul (acesso) */
+.liDropdownH:hover ul{
+    margin-top: 2px !important;
+	display: block;
+    transition: 0.7s;
+}
+
+/* estilizando os elementos li (cadastro e login) da ul (acesso) da ul (inicio, contador, acesso) da navBar */
+.liDropdownH ul li{
+	float:none; /* setando a flutuação dos itens como none */
+	border-bottom: solid 1px black; /* criando uma borda na parte inferior  */
+	color:greenyellow; /* cor da fonte dos elementos em geral */
+	font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* estilizando os elementos a (texto e campo de click realmente) dos elementos li (cadastro e login) da ul (acesso) da ul (index, contador, login) da navBar */
+.btnNavH{
+	background-color:#ffc700; /* setando o background do a */
+	color: #403d34; /* cor da fonte dos elementos em geral */
+	font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+.btnNavH:hover{
+    background-color: #403d34;
+    color: #ffc700;
+    transition: 0.7s;
+}
+
+/****************************** FIM NAVBAR HORIZONTAL ******************************/
+
+#menuzin{
+    display: none;
+}
+
+label[for='menuzin']{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: none;
+    height: 40px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: #ffc700;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 3px 0px #ffc700; 
+
+}
+
+label[for='menuzin']:hover{
+    background-color: black;
+    color: #ffc700;
+    transition: 0.7s;
+}
+/****************************** NAVBAR VERTICAL ******************************/
+.divNavV{
+    /* display: none; */
+    position: fixed;
+    top: 50px;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: auto; 
+    width: 100%;
+    display: none;
+}
+
+.navVertical{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    border: 1px solid black;
+    list-style-type: none;
+}
+
+.navVertical li{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.navVertical li:last-child{
+    border-bottom: none;
+}
+
+.navVertical li a{
+    box-sizing: border-box;
+    display: block;
+    padding: 2vh;
+    text-decoration: none;
+    background-color: #ffc700;
+}
+
+.navVertical li a:hover{
+    color: #ffc700;
+    background-color:#403d34;
+    transition: 0.7s;
+}
+
+.liAcesso{
+    visibility: hidden;
+    display: none;
+}
+
+.liDropdownV:hover .liAcesso{
+    display: block !important;
+    visibility: visible;
+    animation: fadeIn 0.4s;
+    -webkit-animation: fadeIn 0.4s;
+}
+
+.btnNavV{
+	background-color:#ffc700; /* setando o background do a */
+	color: black; /* cor da fonte dos elementos em geral */
+	font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+.btnNavV:hover{
+    background-color: #403d34;
+    color: #ffc700;
+    transition: 0.7s;
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+/****************************** FIM NAVBAR VERTICAL ******************************/
+
+/* RESPONSIVIDADE NAVBAR */
+@media (max-width: 900px){        
+    .navHorizontal{
+        display: none;
+    }
+    .divNavH{
+        display: none;
+    }
+
+    label[for='menuzin']{
+        display: block;
+    }
+
+    .divContainerLogo{
+        display: none;
+    }
+
+    .divEspacoNav{
+        height: 50px;
+    }
+
+}
+/* FIM MEDIA NAVBAR */
+
+#menuzin:checked ~ .divNavV{
+	display: block;
+}
+
+#menuzin:checked ~ label[for='menuzin']{
+    background-color: black;
+    color: #ffc700;
+}
+
+@media (min-width: 901px){
+    #menuzin:checked ~ .divNavV{
+        display: none;
+    }    
+}
+
+
+@media (max-width: 1200px){
+    .divEspacoNav{
+        height: 270px;
+    }
+    .divContainerLogo{
+        height: 220px;
+    }
+    .divNavH{
+        top: 220px;
+    }
+}
+
+@media (max-width: 1100px){
+    .divEspacoNav{
+        height: 260px;
+    }
+    .divContainerLogo{
+        height: 210px;
+    }
+    .divNavH{
+        top: 210px;
+    }
+}
+
+@media (max-width: 1000px){
+    .divEspacoNav{
+        height: 250px;
+    }
+    .divContainerLogo{
+        height: 200px;
+    }
+    .divNavH{
+        top: 200px;
+    }
+}
+
+@media (max-width: 900px){
+    .divEspacoNav{
+        height: 47px;
+    }
+    .divContainerLogo{
+        height: 190px;
+    }
+    .divNavH{
+        top: 190px;
+    }
+}

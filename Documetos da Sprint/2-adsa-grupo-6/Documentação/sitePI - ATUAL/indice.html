@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Tech</title>
+    <link rel="icon" type = "image/x-icon" href="image/logo.png"> 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/navBar.css">
+</head>
+
+<body>
+    <div id="divContainer">
+        <button class="btnTopo fontYellow" onclick="window.scrollTo(0, 0)" id="btnTopo">⬆</button>
+        <div class="textoTopo">Voltar ao início</div>
+        <div class="divContainerLogo fontYellow" id="divLogo">
+            <img class="imgLogo" id="idImgLogo" src="image/logoFaixa.png" alt="">
+        </div>
+        
+        <!-- INICIO NAVBAR HORIZONTAL -->
+        <div class="divNavH" id="divNavH">
+            <ul class="navHorizontal" id="navHorizontal">
+                <li>
+                    <a class="fontYellow" href="">
+                        horizontal1
+                    </a>
+                </li>
+                <li>
+                    <a class="fontYellow" href="">
+                        horizontal2
+                    </a>
+                </li>
+                <li>
+                    <a class="fontYellow" href="">
+                        horizontal3
+                    </a>
+                </li>
+                <li class="liDropdownH" style="float: right">
+                    <a class="fontYellow" href="">
+                        Acessar
+                    </a>
+                    <!-- colocando uma lista dentro de outra (criando um dropdown) -->
+                    <ul id="ulDropdownH" class="ulDropdownH" style=" width: 158.56px; height:56px; padding-top: 0; margin: 0"> 
+                        <li style="display: block; margin-top: 9px;">
+                            <button class="btnNavH" onclick="document.getElementById('idCad').style.display='block'">
+                                Cadastrar
+                            </button>
+                        </li>
+                        <li style="display: block;">
+                            <button class="btnNavH" onclick="document.getElementById('idLogin').style.display='block'">
+                                Login
+                            </button>
+                        </li>    
+                    </ul>
+                </li>    
+            </ul>
+        </div> 
+        <!-- FIM NAVBAR HORIZONTAL -->
+        
+        <!-- INICIO NAVBAR VERTICAL -->
+        <input type="checkbox" id="menuzin">
+        <label for="menuzin">Menu</label>
+        
+        <div class="divNavV">
+            <ul class="navVertical">
+                <li style="height: 6.96vh;">
+                    <button class="btnNavV" onclick="document.getElementById('idCad').style.display='block'" style="width:100%; height:100%; margin: 0; border-top: 1px solid black">
+                        Cadastrar
+                    </button>
+                </li>
+                <li style="height: 6.96vh">
+                    <button class="btnNavV" onclick="document.getElementById('idLogin').style.display='block'" style="width:100%; height: 100%; margin: 0;">
+                        Login
+                    </button>    
+                </li> 
+                <li>
+                    <a href="#divSection2">
+                        vertical1
+                    </a>
+                </li>
+                <li>
+                    <a href="#divSection3">
+                        vertical2
+                    </a>
+                </li>
+                <li>
+                    <a href="#divSection4">
+                        vertical3
+                    </a>
+                </li>
+                <li>
+                    <a href="#divSection5">
+                        vertical4
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <!-- INICIO NAVBAR VERTICAL -->
+
+        <div class="divEspacoNav">
+        </div>
+
+        <!-- HEADER  -->
+        <div class="divHeader" style="background-color: #d1d0d0;" id="divHeader">
+            <div class="divImgR" >
+                <img class="imgHeader" src="image/fundinhoHeader.jpg" alt="">
+            </div>
+            <div class="divTextoL" >
+                <h1 class="hTitulo">Shadow Tech</h1>
+                <p class="pTexto">
+                    Proin consequat justo ac convallis porta. Interdum et malesuada fames ac. Nunc leo ex, 
+                    commodo eu lobortis in, vestibulum eu mauris. Maecenas sit amet sapien eu ipsum posuere tempus.
+                </p>
+            </div>
+        </div> <!-- divHeader  -->
+        
+        <div class="divSection" style="background-color: #ffdfdf;" id="divSection1">
+            <div class="divImgL">
+                <img src="image/logo.png" alt="" style="margin-top: 30px;">
+            </div>
+            <div class="divTextoR">
+            </div>
+        </div> <!-- divSection1 -->
+        
+        <div class="divSection" style="background-color: #d1d0d0;" id="divSection2">
+            <div class="divImgR">
+                <img src="" alt="">
+            </div>
+            <div class="divTextoL">
+            </div>
+        </div> <!-- divSection2 -->
+        
+        <div class="divSection" style="background-color: #ffdfdf;" id="divSection3">
+            <div class="divImgL" >
+                <img src="" alt="">
+            </div>
+            <div class="divTextoR" >
+            </div>
+        </div> <!-- divSection3 -->
+        
+        <div class="divPreFooter" style="background-color: yellow;" id="divFooter">
+            
+        </div> <!-- divPreFooter -->
+        
+        <div class="divFooter" style="background-color: #d1d0d0;" id="divFooter">
+            <footer>
+                <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2862323672266!2d-46.66372668533753!3d-23.558161267358525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2a5270055%3A0x3c7ea4f4c7d51fb6!2sRua%20Haddock%20Lobo%2C%20595%20-%20Cerqueira%20C%C3%A9sar%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001414-002!5e0!3m2!1spt-BR!2sbr!4v1570480919396!5m2!1spt-BR!2sbr" 
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="contato">
+                    <p class="paragrafo" style="border: 1px solid greenyellow">
+                        São Paulo <br>
+                        Telefone SP: (11) XXXX-XXXX <br>
+                        Email: <br>
+                        shadowtech@bandtec.com.br
+                    </p> 
+                    <p class="paragrafo"style="border: 1px solid blue">
+                        ShadowTech - São Paulo <br>
+                        Rua Haddock Lobo,595 Cerqueira Cesar - São Paulo/SP
+                    </p>
+                </div>
+                <div class="texto_fim">
+                    Todos os direitos reservados
+                </div> 
+                
+            </footer>
+        </div> <!-- divFooter -->
+        
+        <div class="divRights" style="background-color: #ff0000;" id="divFooter">
+            
+        </div> <!-- divRights -->
+        
+        
+<!-- ************************************************MODAL********************************************* -->
+
+<!-- INICIO MODAL DE CADASTRO -->
+<div id="idCad" class="modal">
+      
+    <div class="modal-content modalCad animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('idCad').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="image/new-user.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="nome"><b>Nome: </b></label>
+        <input class="inputModal" type="text" placeholder="Digite o seu nome" name="nome">
+  
+        <label for="email"><b>E-mail: </b></label>
+        <input class="inputModal" type="text" placeholder="Digite seu e-mail" name="email">
+  
+        <label for="nomeU"><b>Nome de Usuário:</b></label>
+        <input class="inputModal" type="text" placeholder="Digite o nome de usuário" name="nomeU">
+  
+        <label for="senha"><b>Senha:</b></label>
+        <input class="inputModal" type="password" placeholder="Digite uma senha" name="senha">
+          
+        <label for="senhaC"><b>Confirmação de Senha:</b></label>
+        <input class="inputModal" type="password" placeholder="Digite novamente a senha" name="senhaC">
+          
+        <button type="submit" class="btnModal">Cadastrar</button>
+        <label>
+          <input type="checkbox" checked="checked" name="receber"> Receber novidades por e-mail?
+        </label>
+      </div>
+  
+      <div class="container containerSenha" style="text-align: center; background-color:#e4e4e4">  
+        <button type="button" onclick="document.getElementById('idCad').style.display='none'" class="btnCancel">Cancelar</button>
+      </div>
+    </div>
+</div>
+<!-- FIM MODAL CADASTRO -->
+
+<!-- INICIO MODAL DE LOGIN-->
+
+<div id="idLogin" class="modal">
+  
+  <div class="modal-content modalLogin animate">
+    <div class="imgcontainerLogin">
+      <span onclick="document.getElementById('idLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="image/user.png" alt="Avatar" class="avatarLogin">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nome de usuário:</b></label>
+      <input class="inputModal" type="text" placeholder="Digite seu usuário" name="uname">
+
+      <label for="psw"><b>Senha:</b></label>
+      <input class="inputModal" type="password" placeholder="Digite sua senha" name="psw">
+        
+      <button type="submit" class="btnModal">Acessar</button>
+      <label>
+        <input type="checkbox" name="remember"> Lembrar de mim
+      </label>
+    </div>
+
+    <div class="container containerSenha" style="background-color:#e4e4e4">  
+      <div class="divEsqueci">
+        <span class="psw">Esqueceu sua senha?</span>
+        <button type="button" onclick="document.getElementById('idEsqueciSenha').style.display='block'" class="btnSenha">Clique aqui.</button>
+      </div>
+      <button type="button" onclick="document.getElementById('idLogin').style.display='none'" class="btnCancel">Cancelar</button>
+    </div>
+
+  </div>
+</div>
+<!-- FIM MODAL DE LOGIN-->
+
+<!--INICIO MODAL ESQUECI SENHA-->
+<div id="idEsqueciSenha" class="modal">
+  
+    <div class="modal-content modalSenha animate">
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('idEsqueciSenha').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="image/key.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+        <label for="uname"><b>Preencha para receber uma nova senha:</b></label>
+        <input class="inputModal" type="text" placeholder="Insira o seu e-mail" name="uname">
+
+            <button type="submit" class="btnModal">
+            Enviar
+            </button>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('idEsqueciSenha').style.display='none'" class="btnCancel" style="width:100%;">
+            Cancelar
+        </button>
+        </div>
+    </div>
+</div>
+<!--FIM MODAL ESQUECI SENHA-->
+
+<!-- ************************************************************************************************** -->
+
+</body>
+</html>
+
+<script>
+    //cria uma variável que se linka ao modal
+    var cadastro = document.getElementById('idCad');
+    var login = document.getElementById('idLogin');
+    var esqueciSenha = document.getElementById('idEsqueciSenha');
+
+    // quando o usuário clicar em qualquer lugar fora do modal, o modal fecha
+    window.onclick = (nomeFuncao) => {
+        if (nomeFuncao.target == cadastro) {
+            cadastro.style.display = "none";
+        }
+        if (nomeFuncao.target == login){
+            login.style.display = "none";
+        }
+        if (nomeFuncao.target == esqueciSenha) {
+            esqueciSenha.style.display = "none";
+        }
+    }
+
+    window.onscroll = function() {funcaoScroll()};
+    var contPix = 0;
+
+    function funcaoScroll() {
+            contPix = document.documentElement.scrollTop;
+            
+            var divNav =  document.getElementById("divNavH");
+            var btnTop =  document.getElementById("btnTopo");
+
+            if (contPix < 200){
+                divNav.style.top = `${200 - contPix}px`;
+                divNav.style.left = "0px";
+                btnTop.style.display = "none";
+            }
+            else {
+                divNav.style.top = 0;
+                divNav.style.left = 0;
+                btnTop.style.display = "block";
+            }   
+    }
+</script>

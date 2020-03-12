@@ -1,0 +1,241 @@
+/* Estilizando os inputs de texto (nome e senha) */
+.inputModal {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+/* estilizando os botões padrão */
+.btnModal {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btnModal:hover {
+  opacity: 0.8;
+}
+
+::placeholder{
+  font-size: 98%;
+}
+
+
+/* estilizando o botão cancelar */
+.btnCancel {
+  width: auto;
+  background-color: #ff1100;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* estilizando o botão esqueci minha senha */
+.btnSenha {
+  color: red;
+  font-size: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+  padding-bottom: 0;
+  width: auto;
+  float:right;
+  padding: 10px 18px;
+  border:none;
+  border-bottom: 1px solid #e4e4e4;
+  outline: none;
+  background: none;
+  background-color: none;
+}
+
+.btnSenha:hover {
+  color: rgb(255, 54, 54);
+  border-bottom: 1px solid rgb(255, 78, 78);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.avatar {
+  height: 100px;
+  border-radius: 10%;
+}
+
+/* Centraliza a imagem e posiciona o botão de fechar o modal */
+.imgcontainerLogin {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.avatarLogin {
+  height: 100px;
+  border-radius: 10%;
+}
+
+.container {
+  padding: 16px;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+.containerSenha{
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.divEsqueci{
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  margin:0;
+  margin-top: 0px;
+  padding:0;
+  flex-direction: column;
+  float:right;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Estilização do fundo do Modal*/
+.modal {
+  padding: 0;
+  margin: 0;
+  display: none; /* deixa visibiidade escondida */
+  position: fixed; /* isso vai fazer com que ele seja fixo */
+  z-index: 100000 !important; /* ele se posiciona a frente dos outros componentes, de acordo com o eixo Z (sendo X horizontal, Y vertical e Z profundidade) */
+  left: 0; /* sua posição fixa vai ser colada na esquerda, tendo 0 de distância da extremidade do body */
+  top: 0; /* sua posição fixa vai ser colado ao topo, tendo 0 de distância da extremidade do body */
+  width: 100%; /* largura completa em relação ao body */
+  height: 100%; /* altura completa em relação ao body */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Estilização do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 2vh;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal Login */
+.modalCad {
+  transition: ease all 0.5s;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal Login */
+.modalLogin {
+  transition: ease all 0.5s;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Modal Esqueci minha senha */
+.modalSenha {
+  z-index: 999;
+  transition: ease all 0.5s;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+
+@media (max-width: 680px){
+  .avatarLogin{
+    height:50px;
+    /* width: 50px; */
+  }
+  .avatar{
+    height:50px;
+    /* width: 50px; */
+  }
+  .btnCancel{
+    display: inline-block;
+    width:100%;
+  }
+  .close{
+    display: none;
+  }
+  .container{
+    height:auto;
+  }
+  .divEsqueci{
+    float:none;
+  }
+  .modalSenha{
+    width: 60%;
+  }
+  .modalLogin {
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+}
+
+
+/* The Close Button (x) */
+.close {
+  transition: ease all 5s;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0.8)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0.8)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .btnCancel {
+     width: 100%;
+  }
+}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+
