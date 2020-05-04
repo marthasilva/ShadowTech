@@ -4,8 +4,10 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ['CPU ', 'RAM', 'DISCO', ],
         datasets: [{
-            label: 'Temperatura',
-            data: [Math.random() * 30.00.toFixed(1), Math.random() * 15.00.toFixed(1), Math.random() * 25.00.toFixed(1)],
+            label: '',
+            data: [ Math.random() * 30.00.toFixed(2),
+                    Math.random() * 15.00.toFixed(1),
+                    Math.random() * 25.00.toFixed(1)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.4)', 
                 'rgba(54, 162, 235, 0.4)',
