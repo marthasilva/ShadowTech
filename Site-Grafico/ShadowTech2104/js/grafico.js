@@ -5,7 +5,7 @@ var myChart = new Chart(ctx, {
         labels: ['CPU ', 'RAM', 'DISCO', ],
         datasets: [{
             label: '',
-            data: [ Math.random() * 30.00.toFixed(2),
+            data: [ Math.random() * 15.00.toFixed(2),
                     Math.random() * 15.00.toFixed(1),
                     Math.random() * 25.00.toFixed(1)],
             backgroundColor: [

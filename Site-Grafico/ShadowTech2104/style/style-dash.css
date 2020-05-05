@@ -34,28 +34,44 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
-/* @media screen and (max-width: 600px) {
-  .containerListaAluno ,
-  .listaAluno, label.listaAluno
-  .labelAluno1 {float: none;}
-} */
+@media screen and (max-width: 1200px) {
+  div.listaAluno label.listaAluno1
+  .labelAluno1 {float: none;};
+} 
 
+/* @media screen and (max-width:999px)
 
+{
+    .listaAluno { width: 800px; }
+
+    .labelAluno1
+    {
+        background-color: red;        
+        width: 100px;
+    }
+}
+ */
 
 /* Grafico e processos */
 
-.grafico-inteiro{
+/* .grafico-inteiro{
   height: 79vh;
   width: 77vw;
   margin-left: 10vw;
   border: 0.1px solid;
   border-color: black;
   background-color: white;
+} */
+
+.divHR {
+  width: 77vw;
+  margin-left: 10vw;
 }
 
 #myChart{
-  height: 80%;
+  height: 50%;
   color: white; 
+  background-color: white;
 }
 
 .listaAluno{
