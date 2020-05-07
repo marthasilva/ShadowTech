@@ -1,26 +1,23 @@
 *{
     padding: 0;
+    scroll-behavior: smooth !important;
     margin: 0;
     font-family: "Lato", sans-serif;
 }
-
 html{
     box-sizing: border-box;
-    scroll-behavior: smooth;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
 body{
     background-color: #abb7cf;
 }
-
 .divHeader{
     display: flex;
     flex-direction: row;
     background-color: #011638;
+    width: 100%;
 }
-
 .divLogo{
     width: 40%;
     display: flex;
@@ -28,22 +25,18 @@ body{
     justify-content: center;
     text-align: center;
 }
-
 .divLogo img{
     margin: 5vh 2vw 5vh 4vw;
 }
-
 .divConteudo{
     color: white;
     width: 60%;
     display: flex;
     flex-direction: column;
 }
-
 .divNavTopo{
     display: flex;
 }
-
 .divNavTopo ul{ 
     width: 100%;
     list-style: none;
@@ -52,7 +45,6 @@ body{
     flex-direction: row-reverse;
     font-weight: bolder;
 }
-
 .divNavTopo li{
     box-sizing: border-box;
     width: 200px;
@@ -65,22 +57,19 @@ body{
 .divNavTopo li:first-child{
     margin-right: 3vw;
 }
-
 .divNavTopo li:hover{
-    background-color: #d0d4e0;
+    background-color: #ffffff;
     color: #011638;
     transition: 0.5s;
 }
-
-.divSeilaTeste{
+.divNavContainer{
     font-size: 25px;
     height: 10vh;
     z-index: 9999;
 }
-
 .divDropdown{
     display: none;
-    background-color: #d0d4e0;
+    background-color: #ffffff;
     float: right; 
     margin: 0;
     padding: 0;
@@ -113,118 +102,7 @@ body{
     color: white;
     transition: 0.5s;
 }
-
-
-/* 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                                    NAVBAR FIXA 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
-
-.divNavBarContainer{
-    background-color: #011638;
-    color: white;
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0 5px 0.5px white;
-}
-.divNavBarContainer ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
-    font-weight: bolder;
-}
-.divNavBarContainer li{
-    /* background-color: red; */
-    box-sizing: border-box;
-    width: 192px;
-    text-align: center;
-    margin: 0;
-    padding: 27px 0px 27px 0px;
-    cursor: pointer;
-    font-size: 25px;
-}
-.divNavBarContainer li:first-child{
-    margin-right: 3vw;
-}
-.divNavBarContainer li:hover{
-    background-color: #d0d4e0;
-    color: #011638;
-    transition: 0.5s;
-}
-.divNavBarContainer .liLogoBar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0;
-    padding-top: 8px;
-    margin: 0;
-    width: 100px;
-}
-.divNavBarContainer .liLogoBar:hover{
-    background-color: #011638;
-}
-.divNavBarContainer img{
-    height: 70px;
-    padding: 0;
-    margin:0;
-}
-.divSeilaTeste2{
-    background-color: white;
-    font-size: 125%;
-    height: 0;
-    z-index: 9999;
-}
-
-.divDropdownBar{
-    display: none;
-    background-color: #d0d4e0;
-    float: right; 
-    margin: 0;
-    padding: 0;
-    margin-right: 3vw;
-}
-.divDropdownBar ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    font-size: 75%;
-    font-weight: normal;
-}
-.divDropdownBar li{
-    color: #011638;
-    font-weight: bolder;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 2vh 2vw 2vh 2vw;
-    cursor: pointer;
-    border-bottom: 1px solid #011638;
-}
-.divDropdownBar li:first-child{
-    border-top: 1px solid #011638;
-}
-.divDropdownBar li:hover{
-    background-color: #0585EA;
-    color: white;
-    transition: 0.5s;
-}
-
-/* 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                            DIVACESSO (BOTÃO ACESSAR E LINK CADASTRAR)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
-
+/*                                           DIVACESSO (BOTÃO ACESSAR E LINK CADASTRAR)                                  */
 .divAcesso{
     display: flex;
     flex-direction: column;
@@ -264,12 +142,26 @@ body{
     border-color: white;
     border-radius: 0;
 }
-
-/* 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                                CORPO DO SITE (CONTAINER)
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
+/*                                                 CORPO DO SITE (CONTAINER)                                        */
+.btnTopo{
+    padding: 0 12px;
+    margin: 0;
+    background-color: black;
+    border-radius: 100vh;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 3vh;
+    left: 2vw;
+    font-size: 200%;
+    outline: none;
+    z-index: 9999;
+}
+.btnTopo:hover{
+    color: #403d34;
+    background-color: #ffc700;
+    transition: 0.7s;
+}
 .divImagemRede{
     padding: 0;
     margin: 0;
@@ -294,8 +186,8 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60vh;
-    min-height: 60vh;
+    height: 70vh;
+
 }
 .reverse{
     flex-direction: row-reverse;
@@ -331,12 +223,16 @@ body{
     width: 100%;
     height: 100%;
 }
+.divSectionEquipe{
+    height: auto;
+}
 .divEquipe{
     background-color: #0585EA;
     text-align: center;
     font-size: 250%;
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
 }
 .divEquipe h3{
     padding: 64px 0 0 0;
@@ -345,7 +241,7 @@ body{
     padding: 64px;
 }
 .divFotinhos img{
-    padding: 0 16px 16px ss16px;
+    padding: 2vh 1.5vw 2vh 1.5vw;
     height: 140px;
 }
 
@@ -370,28 +266,26 @@ body{
     width: 100%;
     height: 100%;
 }
-.divContato h3{
-    padding: 64px 0 0 0;
-}
-
-/* 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                                MEDIA E ANIMAÇÕES
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
+/*                                                 MEDIA E ANIMAÇÕES                                            */
 @media screen and (max-width: 1122px){
     .divHeader{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .divLogo{
-        width: 100%;
+        width: 50%;
+        min-width: 20px;
     }
     .divLogo img{
-        margin: 5vh 4vw 5vh 4vw;        
+        margin: 10vh 0 -2vh 0;        
         width: 100%;
     }
     .divConteudo{
         width:100%;
+    }
+    .divNavTopo{
+        display: none;
     }
     .divNavTopo ul{
         justify-content: center;
@@ -403,9 +297,9 @@ body{
         margin-right: 0;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 835px){
     .divNavBarContainer li:first-child{
-        margin-right: 0;
+        margin-right: 0 !important;
     }
     .divDropdownBar{
         margin-right: 0;
@@ -416,8 +310,8 @@ body{
     }
     .divSection{
         flex-direction: column;
+        height: auto;
     }
-    
     .divImagem{
         height: 100%;
         width: 100%;
@@ -430,6 +324,9 @@ body{
     }
     .heightAuto{
         height: 100%;
+    }
+    .divMapa{
+        height: 60vh;
     }
 }
 

@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShadowTech</title>
+    <link rel="icon" type = "image/x-icon" href="./img/logo.png"> 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/modal.css">
     <link rel="stylesheet" href="style/margin.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <!-- <link rel="stylesheet" href="style/navBarVertical.css"> -->
     <link rel="stylesheet" href="style/padding.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/teste.css">
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
 </head>
 <body>
     <!-- HEADER AZUL -->
+    <button class="btnTopo fontYellow" onclick="window.scrollTo(0, 0)" id="btnTopo">⬆</button>
     <div class="divHeader" id="divHeader">
         <div class="divLogo">
             <img src="img/logo.png" id="imgLogo" alt="">
@@ -39,7 +42,7 @@
                     </li>
                 </ul>
             </div> 
-            <div class="divSeilaTeste">
+            <div class="divNavContainer">
                 <div id="divTeste" class="divDropdown aparecer">
                     <ul id="ulDropdown" class="dropdown">
                         <li id="liLogin">
@@ -60,7 +63,7 @@
         </div>
     </div>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR FIXA HEADER -->
     <div class="divNavBarContainer">
         <div class="divNavBar">
             <ul id="ulNavBar">
@@ -81,7 +84,7 @@
                 </li>
             </ul>
         </div> 
-        <div class="divSeilaTeste2">
+        <div class="divNavContainer2">
             <div id="divTesteBar" class="divDropdownBar aparecer">
                 <div class="divEspaco">
 
@@ -96,7 +99,41 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> <!-- NAVBAR HORIZONTAL -->
+
+    <!-- NAVBAR VERTICAL -->
+    <!-- <input type="checkbox" id="menuzin">
+    <label for="menuzin">Menu</label>
+    <div class="divNavV">
+        <ul class="navVertical">
+            <li style="height: 6.96vh;">
+                <button class="btnNavV" onclick="document.getElementById('idCad').style.display='block'" style="width:100%; height:100%; margin: 0; border-top: 1px solid black">
+                    Cadastrar
+                </button>
+            </li>
+            <li style="height: 6.96vh">
+                <button class="btnNavV" onclick="document.getElementById('idLogin').style.display='block'" style="width:100%; height: 100%; margin: 0;">
+                    Login
+                </button>    
+            </li> 
+            <li>
+                <a href="#divSection2">
+                    Sobre Nós
+                </a>
+            </li>
+            <li>
+                <a href="#divSection3">
+                    Equipe
+                </a>
+            </li>
+            <li>
+                <a href="#divFooter">
+                    Contato
+                </a>
+            </li>
+        </ul>
+    </div>  -->
+    <!-- NAVBAR VERTICAL -->
 
     <!-- IMAGEM DE REDE AZUL -->
     <div class="divImagemRede">
@@ -134,18 +171,20 @@
                 </div>
             </div>
         </div>
-        <div class="divSection">
+        <div class="divSection divSectionEquipe">
             <div class="divEquipe" id="divEquipe">
                 <h3>
                     Equipe
                 </h3>
-                <div class="divFotinhos">
-                    <img src="img/iconeJP.png" alt="">
-                    <img src="img/iconeJhow.png" alt="">
-                    <img src="img/iconeBraian.png" alt="">
-                    <img src="img/iconeRafa.png" alt="">
-                    <img src="img/persona.png" alt="">
-                    <img src="img/persona.png" alt="">
+                <div class="divFotinhos margin-bottom-64-px">
+                    <div style="background-color: white; box-shadow: 10px 10px 10px 0px #011638">
+                        <img src="img/iconeBraian.png" alt="">
+                        <img src="img/iconeJhow.png" alt="">
+                        <img src="img/iconeJP.png" alt="">
+                        <img src="img/iconeMartha.png" alt="">
+                        <img src="img/iconeRafa.png" alt="">
+                        <img src="img/iconeRBachega.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,37 +201,34 @@
         
         <div class="divSectionContato">
             <div id="divContato" class="divContato">
-                <h3>
+                <h3 class="padding-top-64">
                     Contato
                 </h3>
-                <div class="divParte">
-
-                </div>
             </div>
         </div>
         
     </div>
     
     <!-- FOOTER DO SITE COM CONTATO -->
-    <div class="divContainerFooter padding-bottom-32 jpb-margin-great jpb-margin-top2 jpb-no-margin-bottom jpb-center">
-        <div class="no-padgin">    
-            <div class="divQuadro jpb-text-black jpb-left-align no-padgin">
-                <p>
-                    © 2020 ShadowTech. <br> Todos os direitos reservados <br>
-                    <a href="https://policies.google.com/terms">Termos e condições</a> | 
-                    <a href="https://policies.google.com/privacy"> Política de privacidade</a> 
-                </p>
-            </div>
-            <div class="divQuadro jpb-center no-padgin">
-                <img src="img/logo.png" style="height: 15vh" alt=""> <br>
-            </div>
-
-            <div class="divQuadro jpb-text-black jpb-right-align no-padgin">
+    <div class="divContainerFooter padding-bottom-32 margin-top-64-px margin-bottom-0-px center">
+        <div class="padding-0 margin-0-px">    
+            <div class="divQuadro alinhamentoLeft padding-0 margin-0-px">
                 <p>
                     BandTec <br> 
                     Digital Building<br>
                     Rua Haddock Lobo 595, SP <br>
                     <a href="mailto:192-2a-grupo6@bandtec.com.br">ShadowTech@bandtec.com.br</a>
+                </p>
+            </div>
+            <div class="divQuadro divQuadroLogo center padding-0 margin-0-px">
+                <img src="img/logo.png" style="height: 15vh" alt=""> <br>
+            </div>
+
+            <div class="divQuadro alinhamentoRight padding-0 margin-0-px">
+                <p>
+                    © 2020 ShadowTech. <br> Todos os direitos reservados <br>
+                    <a href="https://policies.google.com/privacy"> Política de privacidade</a> <br> 
+                    <a href="https://policies.google.com/terms">Termos e condições</a> 
                 </p>
             </div>
         </div>
@@ -234,8 +270,7 @@
     </div> <!-- FIM MODAL CADASTRO -->
 
 <!--  
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # MODAL LOGIN# # # # # # # # # # # # # # # # # # # # # # # # # # # # 
--->
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # MODAL LOGIN# # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
     <div id="idLogin" class="modal">
         <div class="modalContainer modalLogin animate">
             <span onclick="document.getElementById('idLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -263,9 +298,7 @@
         </div>
     </div> <!-- FIM MODAL TESTE -->
 
-    <!--  
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MODALSENHA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    -->
+<!--  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MODALSENHA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
     <div id="idEsqueciSenha" class="modal">
         <div class="modalContainer modalSenha animate">
             <span onclick="document.getElementById('idEsqueciSenha').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -288,11 +321,10 @@
 </body>
 </html>
 
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
 <script>
-
-
     function logar() {
-
         if (testeLogin.value == "admin" && testeSenha.value == "admin" ) {
            window.location.href = 'dash.html';
         } else {
@@ -300,32 +332,84 @@
         }
     }
 
-
     $(document).ready(function (){
-
-        //  FAZ APARECER A NAVBAR CASO A PÁGINA SEJA RECARREGADA QUANDO A JANELA DE VISÃO ESTÁ ABAIXO DO HEADER
-        if ($(document).scrollTop() >= $("div#divHeader").outerHeight() - 90) {
-            $(".divNavBarContainer").css("display", "flex");
-        }
-/*  
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SETANDO ROLAMENTO PARA A NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
+        // FAZER VALIDAÇÃO DO TAMANHO DO LOGO NA NAVBAR (ideal atual 68)
+    // $("#imgLogoNav").height($("li#liContatoBar").outerHeight());
+        // $(document).on('change', function(){
+        //     //  FAZ APARECER A NAVBAR CASO A PÁGINA SEJA RECARREGADA QUANDO A JANELA DE VISÃO ESTÁ ABAIXO DO HEADER
+        //     if($(document).width() >= 1122){
+        //         if ($(document).scrollTop() >= $("div#divHeader").outerHeight() - 90) {
+        //             $(".divNavBarContainer").css("display", "flex");
+        //         }
+        //         else{
+        //             $(".divNavBarContainer").css("display", "none");
+        //         }
+        //     }
+        // });
         $(document).on("scroll", function(){
             var scrollDiv = $("#divImagemRede").offsetTop;
-            if ($(document).scrollTop() >= $("div#divHeader").outerHeight() - 90) {
-                $(".divNavBarContainer").css("display", "flex");
-            }
-            else if ($(document).scrollTop() <= $("div#divHeader").outerHeight() - 90){
-                $(".divNavBarContainer").css("display", "none");
-            }
-            else{
-                console.warn("Falhou");
-            }
-            
+            // if($(document).width() >= 1122){
+                if ($(document).scrollTop() >= $("div#divHeader").outerHeight() - 90) {
+                    $(".divNavBarContainer").css("display", "flex");
+                }
+                else{
+                    $(".divNavBarContainer").css("display", "none");
+                }
+            // }
+            // else if($(document).width() <= 1122){
+            //     if ($(document).scrollTop() <= $("div#divHeader").outerHeight() - 90){
+            //         $(".divNavBarContainer").css("display", "none");
+            //     }
+            // }
+            // else{
+            //     console.warn("Falhou");
+            // }
         });
-/*  
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SETANDO ROLAMENTO DA PÁGINA ATÉ O ELEMENTO CLICADO NA BARRA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/
+
+        // $(document).on('click', function(){
+        //     var menu = $("menuzin");
+        //     if (menu.is(":checked")){
+        //         navV.css("display", "flex");
+        //     }
+        //     else{
+        //         navV.css("display", "none");
+        //     }
+        // })
+
+        /*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SETANDO ROLAMENTO PARA A NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  */
+        // $(document).on("scroll", function(){
+        //     var scrollDiv = $("#divImagemRede").offsetTop;
+        //     var navV = $(".divNavV");
+        //     var menu = $("#menuzin");
+        //     if ($(document).scrollTop() >= $("div#divHeader").outerHeight() - 90) {
+        //         if (menu.is(':checked')){
+        //             navV.css("display", "flex");
+        //         }
+        //         else{
+        //             navV.css("display", "none");
+        //         }
+        //         if($(document).width() <= 800){
+        //             $(".btnTopo").css("display", "flex");
+        //         }
+        //         else{
+        //             $(".btnTopo").css("display", "none");
+        //         }
+        //     }
+        //     else if ($(document).scrollTop() <= $("div#divHeader").outerHeight() - 90){
+        //         $(".divNavV").css("display", "none");
+        //         if($(document).width() <= 800){
+        //             $(".btnTopo").css("display", "none");
+        //         }
+        //         else{
+        //             $(".btnTopo").css("display", "none");
+        //         }
+        //     }
+        //     else{
+        //         console.warn("Falhou");
+        //     }
+        // });
+
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SETANDO ROLAMENTO DA PÁGINA ATÉ O ELEMENTO CLICADO NA BARRA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  */
         $("#ulNavTopo").on("click","li",function() {
             if (this.id == "liProduto"){
                 var scrollDiv = document.getElementById("divProduto").offsetTop;
@@ -359,19 +443,13 @@
                 window.scrollTo({ top: scrollDiv - 70, behavior: 'smooth'});
             }
         })
-
-/*  
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ TROCA A LOGO GRANDE AO PASSAR COM MOUSE POR CIMA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/                                    
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ TROCA A LOGO GRANDE AO PASSAR COM MOUSE POR CIMA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  */                                    
         $("img#imgLogo").mouseover(function(){
             $(this).attr("src", "img/logo_shiny.png");
         }).mouseout(function(){
             $(this).attr("src", "img/logo.png");
         });
-/*  
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ DROPDOWN NAVTOPO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/                                    
-
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ DROPDOWN NAVTOPO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  */                                    
         $("div#divTeste").mouseover(function (){
             $(this).css("display", "flex");
             $("li#liAcessar").css("background-color", "#d0d4e0");
@@ -402,9 +480,7 @@
         }).mouseout(function(){
             $(this).attr("src", "img/logo.png");
         });
-/*  
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ DROPDOWN NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ DROPDOWN NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  */ 
         $( "li#liAcessarBar" ).mouseover(function() {
             $(this).css("background-color", "#d0d4e0");
             $(this).css("color", "#011638");
@@ -431,30 +507,27 @@
         }); // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NAVBAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         $("button#btnAcesso").on("click", function (){
-            $("#idLogin").css("display", "block");
+            $("#idLogin").css("display", "flex");
         });
         $("li#liLogin").on("click", function (){
-            $("#idLogin").css("display", "block");
+            $("#idLogin").css("display", "flex");
         });
         $("li#liLoginBar").on("click", function (){
-            $("#idLogin").css("display", "block");
+            $("#idLogin").css("display", "flex");
         });
         $("button#btnCadastro").on("click", function (){
-            $("#idCadastro").css("display", "block");
+            $("#idCadastro").css("display", "flex");
         });
         $("li#liCadastro").on("click", function (){
-            $("#idCadastro").css("display", "block");
+            $("#idCadastro").css("display", "flex");
         });
         $("li#liCadastroBar").on("click", function (){
-            $("#idCadastro").css("display", "block");
+            $("#idCadastro").css("display", "flex");
         });
         $("span#spanSenha").on("click", function (){
-            $("#idEsqueciSenha").css("display", "block");
-
+            $("#idEsqueciSenha").css("display", "flex");
         })
-/*  
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABRINDO MODAL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-*/ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABRINDO MODAL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ 
         var modalContent = document.getElementsByClassName('modalContent');
         var cadastro = document.getElementById('idCadastro');
         var login = document.getElementById('idLogin');
@@ -470,10 +543,6 @@
                 esqueciSenha.style.display = "none";
             }
         }
-
-
-        
-
     });
-
+   
 </script>

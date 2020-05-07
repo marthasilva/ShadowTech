@@ -10,6 +10,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
@@ -175,6 +177,23 @@
   }
 }
 
+@media screen and (max-width: 800px){
+  .modalContainer{
+    margin: auto auto auto auto;
+  }
+  .modalSenha{
+    width:100%;
+    min-width: auto;
+  }
+  .modalLogin{
+    width:100%;
+    min-width: auto;
+  }
+  .modalCadastro{
+    width:100%;
+    min-width: auto;
+  }
+}
 .PALETA_DE_CORES{
   color: #011638 ;
   color: #0585EA ;
