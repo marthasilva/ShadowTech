@@ -1,38 +1,92 @@
 .divContainerFooter:after,
 .divContainerFooter:before{
     content: "";
-    display: table;
+    display: flex;
     clear: both
 }
 .center {
     text-align: center!important
 }
 .divQuadro {
-    float: left;
-    display: flex;
+    float: center;
+    display: list-item ;
     align-items: center;
     justify-content: center;
-    width: 33.33333%;
+    width: 50%;
+
 }
 .alinhamentoLeft{
-    text-align: left;
+    text-align: center;
 }
 .alinhamentoRight{
-    text-align: right;
+    text-align: center;
 }
 @media (max-width:937px) {
     .divQuadro {
         margin: 16px 0 16px 0;
-        padding: 8px 0 8px 0;
+        padding: 0px 0 0px 0;
         width: 100%
     }
     .alinhamentoLeft{
         text-align: center;
     }
     .alinhamentoRight{
-        text-align: center;
+        text-align: 50px;
     }
     .divQuadroLogo{
         padding: 32px 0 32px 0 !important;
     }
+
+.divSectionContato {
+
+    margin: 16px 0 16px 0;
+    padding: 8px 0 8px 0;
+    width: 100%
+
+}
+
+.
+
+
+}
+
+
+/* Cria 3 colunas com 20vw de margens entre si */
+#footer-grid > div {
+    float: left;
+    width: calc(33.33% - 10vw);
+    height: 14em;
+    padding-right: 10vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Arruma as margens externas das 3 colunas grandes */
+#footer-grid > div:first-child {
+    padding-left: calc(10vw / 2);
+}
+#footer-grid > div:last-of-type {
+    padding-right: 0;
+}
+
+
+/* Cada item dentro de cada uma das 3 colunas
+ * tem um lado "direito e um lado "esquerdo". */
+#footer-grid > div > div{
+    float: left;
+    width: calc(30% - 2vw);
+    height: 10vh;
+    padding-right: 2vw;
+}
+#footer-grid > div > div:last-of-type {
+    width: calc(70% - 2vw);
+    padding-right: 0;
+}
+
+/* ícone (div) do lado esquerdo */
+#footer-grid > div > div:first-child {
+    text-align: right;
+}
+/* texto (div) do lado direito */
+#footer-grid > div > div:last-of-type {
 }
